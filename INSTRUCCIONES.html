@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Instrucciones</title>
+    <link rel="icon" type="image/png" href="Desarrollo Web/Danyimages/instrucciones.png">
+    <style media="screen">
+      body {
+        background: url(Trivia/Danyimages/koo.jpg)
+      }
+      h1 {
+        color: #000;
+        font-size: 30px;
+        text-align: center;
+        font-style: italic;
+        line-height: 2em;
+        font-family: inherit;
+        font-weight: bold;
+      letter-spacing: inherit;
+      }
+      h3 {
+        color: black;
+        text-align: center;
+        font-style: italic;
+        line-height: 2em;
+        font-family: inherit;
+        font-weight:bold;
+      letter-spacing: inherit;
+      font-size: 30px;
+      }
+p {
+  color: black;
+  text-align: center;
+  font-style: italic;
+    line-height: 2em;
+
+  font-family: inherit;
+  font-weight: bold;
+
+letter-spacing: inherit;
+    font-size: 30px
+}
+ul {
+  color: black;
+  text-align: center;
+  font-style: italic;
+  line-height: 2em;
+  font-family: inherit;
+  font-weight: bold;
+letter-spacing: inherit;
+font-size: 30px;
+}
+
+    input[type=text]{
+  background-color:white;
+  color: black;
+  border: 3px solid #600;
+  width: 25;
+  height: 23px;
+
+}
+
+figure{
+  text-align:center;
+}
+
+input{
+  text-align: center;
+}
+
+form{
+  text-align: center;
+  line-height: 3.0em;
+}
+    </style>
+  </head>
+  <body>
+
+<section> <!-- 1 qUE SALGA EL NOMBRE DE LA PERSONA-->
+  <h1>Hola <p id = "NombreDeUsuario">(Nombre De Usuario)</p>  </h1>
+</section>
+
+<section> <!-- 2 ICONO DE INSTRUCCIONES-->
+  <h3>I n s t r u c c i o n e s</h3>
+  <p>Elige un tema de tú interés.<br>
+    Responde las preguntas del tema que elegiste:<br>
+  Por cada respuesta correcta te regalamos dos monedas electrónicas <br>
+    de lo contrario, por cada incorrecta, te quitaremos una una.
+  </p>
+</section>
+
+<section> <!-- imagen de buena suerte-->
+<figure>
+  <img src='Desarrollo Web/Danyimages/buenasuerte.png' width="400" height="200"> <!--widht ancho //height altura-->
+</figure>
+</section>
+
+<section> <!-- 4 TEMA DE INTERES-->
+  <p>¡Tema de interés!</p>
+</section>
+
+<section> <!-- 5 BONOTES (ARTE Y CIENCIA)-->
+  <form action="preguntasarte.html" method="post">
+    <input type="submit" name="" value="¡Arte!" id='btnarte'>
+  </form>
+
+  <form action="preguntasciencia.html" method="post">
+    <input type="submit" name="" value="¡Ciencia!" id='btnciencia'>
+  </form>
+</section>
+<script type="text/javascript" src='appIns.js'></script>
+  </body>
+</html>

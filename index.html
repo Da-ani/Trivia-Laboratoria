@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es"> <!--idioma español-->
+  <head>
+    <meta charset="utf-8"> <!--para leer tildes y eñes-->
+    <title>Trivia</title>
+    <link rel="icon" type="image/png" href="Desarrollo Web/Danyimages/trivia.png">
+    <link rel="stylesheet" href="index.css">
+    <style media="screen">
+      body {
+        background: url(Trivia/Danyimages/madera.jpg)
+      }
+      h1 {
+        color: black;
+        text-align: center;
+        font-style: italic;
+        line-height: 2.5em;
+      }
+
+    input[type=text]{
+  background-color:white;
+  color: black;
+  border: 1px solid #000;
+  width: 25;
+  height: 23px;
+
+}
+
+figure{
+  text-align:center;
+
+}
+
+input{
+  text-align: center;
+}
+
+form{
+  text-align: center;
+  line-height: 3.0em;
+}
+    </style>
+  </head>
+  <body>
+
+    <section> <!--1- TITULO-->
+    <h1>Demuestra tu<br> <strong>Cultura General</strong> <br>y gana<br>
+      <strong>dinero electrónico</strong></h1>
+      <figure>
+        <img src='Desarrollo Web/Danyimages/costalmoneda.png' width="200" height="200"> <!--widht ancho //height altura-->
+      </figure>
+</section>
+
+  <section> <!-- 2- INPUT PARA INGRESAR DATOS (NOMBRE) Y BOTON DE JUGAR-->
+    <form action="INSTRUCCIONES.html" method="get"> <!-- get es para enviar por detras y no es post-->
+      <label for="nombre"> <p>Ingresa tu Nombre</p> </label> <!--texto que aparecerá a lado del input NOMBRE (:-->
+      <!--for hace el focus en el input donde tu lke pongas el id-->
+      <input type="text" placeholder="Nombre(s) (:" id='inputNombre'> <!--typetext es porque el input es de tipo texto //placeholder lo que va adentro del input-->
+
+      <br><input type="submit" name="" value="¡A Jugar!" id='btnAJugar'> <!--submit cierra form envia datos y me enlaza al link de action-->
+      <!--<button type="button" name="button">¡A Jugar!</button> SOLO FUE UNA EXPLICACION-->
+    </form>
+  </section>
+
+  <section class="imagenPlay"> <!-- 3- IMAGEN DE PLAY-->
+    <figure>
+      <img src="Desarrollo Web/Danyimages/play.png" width='40' height='40'>
+    </figure>
+  </section>
+
+<script type="text/javascript" src='app.js'></script>
+
+  </body>
+</html>
